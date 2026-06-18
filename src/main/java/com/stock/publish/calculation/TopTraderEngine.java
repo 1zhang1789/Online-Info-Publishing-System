@@ -24,7 +24,7 @@ public class TopTraderEngine {
      * 用于按天对 Redis Key 进行数据隔离
      */
     private String getDateSuffix() {
-        return LocalDate.now().format(DateTimeFormatter.BASIC_ISO_DATE);
+        return LocalDate.now().format(DateTimeFormatter.ISO_LOCAL_DATE);
     }
 
     /**
